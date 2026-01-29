@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import heartAttack from "../../Assets/Projects/heart_attack.png";
 import messiAnalytics from "../../Assets/Projects/messi_analytics.png";
+import segmentationClient from "../../Assets/Projects/spotifapi.png";
+import gestionStock from "../../Assets/Projects/boutique.png";
 
 function Projects() {
   return (
@@ -34,6 +36,26 @@ function Projects() {
               title="Analyse Football - Messi WC 2022"
               description="Projet de visualisation de données et d'analyse de la performance de Lionel Messi lors de la Coupe du Monde 2022. Visualisation des dribbles, trajectoires de balle, passes réussies, tirs et fautes obtenues avec Python. Mon premier projet data science partagé publiquement sur LinkedIn !"
               demoLink="https://www.linkedin.com/posts/louey-barbirou-2b97a828b_cest-mon-tout-premier-projet-que-je-partage-activity-7404512770836156416-1NfQ"
+            />
+          </Col>
+
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={segmentationClient}
+              isBlog={false}
+              title="Segmentation Client Intelligente"
+              description="Algorithme de Machine Learning (K-Means Clustering) pour segmenter une base de données clients. Analyse des habitudes d'achat et profilage pour des campagnes marketing ciblées. Utilisation de Python, Scikit-Learn et Seaborn pour la visualisation des clusters."
+              ghLink="https://github.com/lucabarb/customer-segmentation"
+            />
+          </Col>
+
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={gestionStock}
+              isBlog={false}
+              title="Gestion de Stock Prédictive"
+              description="Système d'IA basé sur des séries temporelles (Prophet/LSTM) pour prédire la demande future et optimiser les niveaux de stock. Réduction des ruptures de stock et des surplus. Dashboard interactif pour le suivi des prévisions."
+              ghLink="https://github.com/lucabarb/predictive-inventory"
             />
           </Col>
 
