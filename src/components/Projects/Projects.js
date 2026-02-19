@@ -6,6 +6,8 @@ import heartAttack from "../../Assets/Projects/heart_attack.png";
 import messiAnalytics from "../../Assets/Projects/messi_analytics.png";
 import segmentationClient from "../../Assets/Projects/spotifapi.png";
 import gestionStock from "../../Assets/Projects/boutique.png";
+import insightHub from "../../Assets/Projects/insight_hub.png";
+import tradeWithAI from "../../Assets/Projects/trade_with_ai.png";
 
 function Projects() {
   return (
@@ -59,6 +61,25 @@ function Projects() {
             />
           </Col>
 
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={insightHub}
+              isBlog={false}
+              title="Insight Hub - Analyse de la Dépression Étudiante"
+              description="Plateforme d'analyse et de prédiction de la dépression chez les étudiants basée sur un dataset de 100 000 entrées. Exploration des facteurs de style de vie (sommeil, GPA, heures d'étude) via un dashboard interactif (Plotly.js & Tailwind CSS) et un modèle de régression logistique pour la prédiction en temps réel."
+              ghLink="https://github.com/lucabarb/student_depression"
+            />
+          </Col>
+
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={tradeWithAI}
+              isBlog={false}
+              title="Crypto Vision - Trading avec IA"
+              description="Application de trading assistée par IA pour l'analyse et la prédiction des marchés crypto. Intègre des indicateurs techniques avancés et des modèles de machine learning pour fournir des signaux de trading (Achat/Vente/Neutre). Visualisation interactive des données avec des graphiques en chandelier et support de plusieurs paires de devises."
+              ghLink="https://github.com/lucabarb/Trade-with-AI"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
